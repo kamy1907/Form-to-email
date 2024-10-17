@@ -8,6 +8,6 @@ Things to change;
 Sign up for an Emailjs Account to get your;
 - service_id
 - template_id and,
-- User_id(also known as public key)
+- User_id(also known as public key).
 
 ...using this link https://www.emailjs.com
