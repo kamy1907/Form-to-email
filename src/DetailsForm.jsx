@@ -21,10 +21,10 @@ function DetailsForm() {
     form.current.user_no.value = generateUserNo();
 
     emailjs.sendForm(
-      'service_nju2ql4',
-      'template_klfpvy6',
+      'service_nju2ql4', //Service_ID
+      'template_klfpvy6', //Template_ID
       form.current,
-      'DjX0sY8lUe-tfOMFl',
+      'DjX0sY8lUe-tfOMFl', //Public Key
     )
       .then((response) => {
         setMessage('Email sent successfully!');
@@ -40,6 +40,7 @@ function DetailsForm() {
     <div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
       <h2 className="text-lg font-bold mb-4">Get in Touch</h2>
       <form ref={form} onSubmit={sendEmail}>
+        
         {/* Hidden input to store the generated user number */}
         <input type="hidden" name="user_no" />
 
